@@ -65,3 +65,30 @@
     font-size: 12px;
     border: solid 1px white;
 }
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+select {
+    &:focus{
+        outline: 0 !important;
+    }
+    &:active{
+        outline: 0 !important;
+    }
+}
+.ngSelectBox select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+.ngSelectBox select {
+    opacity: 1 ;
+    width: 120%;
+}
+.ngSelectBox select:focus{
+    outline: 0 !important;
+}
+.ngSelectBox select:active{
+    outline: 0 !important;
+}
